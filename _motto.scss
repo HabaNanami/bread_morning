@@ -92,22 +92,22 @@
                 dt {
                     margin-left: 20px;
 
-                    &::after {
-                        bottom: -100px;
-                    }
+                    // &::after {
+                    //     bottom: -100px;
+                    // }
                 }
 
                 dd {
                     margin-left: 10px;
                 }
 
-                .season {
-                    dt {
-                        &::after {
-                            bottom: calc(27% - 100px);
-                        }
-                    }
-                }
+                // .season {
+                //     dt {
+                //         &::after {
+                //             bottom: calc(27% - 100px);
+                //         }
+                //     }
+                // }
             }
         }
     }

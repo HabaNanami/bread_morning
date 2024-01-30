@@ -886,14 +886,8 @@ header.open .mask {
   .motto .container .text-area dt {
     margin-left: 20px;
   }
-  .motto .container .text-area dt::after {
-    bottom: -100px;
-  }
   .motto .container .text-area dd {
     margin-left: 10px;
-  }
-  .motto .container .text-area .season dt::after {
-    bottom: calc(27% - 100px);
   }
 }
 @media (max-width: 500px) {
