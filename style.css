@@ -887,6 +887,7 @@ header.open .mask {
     margin-left: 20px;
   }
   .motto .container .text-area dt::after {
+    height: 5px;
     bottom: -100px;
   }
   .motto .container .text-area dd {
