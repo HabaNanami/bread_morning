@@ -45,6 +45,7 @@
                     position: absolute;
                     bottom: 0;
                     right: -30px;
+                    margin-left: 30px;
                 }
             }
 
@@ -92,22 +93,22 @@
                 dt {
                     margin-left: 20px;
 
-                    &::after {
-                        bottom: -200px;
-                    }
+                    // &::after {
+                    //     bottom: -200px;
+                    // }
                 }
 
                 dd {
                     margin-left: 10px;
                 }
 
-                .season {
-                    dt {
-                        &::after {
-                            bottom: calc(27% - 200px);
-                        }
-                    }
-                }
+                // .season {
+                //     dt {
+                //         &::after {
+                //             bottom: calc(27% - 200px);
+                //         }
+                //     }
+                // }
             }
         }
     }
