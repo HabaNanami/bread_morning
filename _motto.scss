@@ -5,7 +5,6 @@
     background-position: top;
     padding-top: 100px;
     padding-bottom: 50px;
-    height: 800px;
 
     .container {
 
@@ -81,7 +80,6 @@
     .motto {
         background-image: url(../img/motto/background-tb2.jpg);
         background-size: cover;
-        height: 1000px;
 
         .container {
             .text-area {
@@ -93,10 +91,22 @@
 
                 dt {
                     margin-left: 20px;
+
+                    &::after {
+                        bottom: -100px;
+                    }
                 }
 
                 dd {
                     margin-left: 10px;
+                }
+
+                .season {
+                    dt {
+                        &::after {
+                            bottom: calc(27% - 100px);
+                        }
+                    }
                 }
             }
         }
