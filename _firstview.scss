@@ -1,0 +1,178 @@
+.first-view {
+    height: calc(100% - 95px);
+    margin-top: 0;
+    position: relative;
+
+    .container {
+        display: flex;
+        max-width: 100vw;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 0;
+        padding-left: 0;
+
+        .text-imgcount-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .text-column-area {
+                writing-mode: vertical-rl;
+                margin: 0 50px;
+
+                p {
+                    font-size: 1.8rem;
+                    letter-spacing: 1.4rem;
+                    font-weight: bold;
+                    margin-right: 10px;
+                }
+            }
+
+            .count {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 30%;
+
+                .img-count-area {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    width: 100%;
+                    font-size: 3.6rem;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+
+                    .large {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        font-size: 5.6rem;
+                        line-height: 56px;
+
+                        .green {
+                            color: #2F6E65;
+
+                            .counter {
+                                display: block;
+                                overflow: hidden;
+
+                                li {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 3rem;
+                                    list-style-type: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .shop-name {
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                }
+            }
+
+        }
+
+        .slide {
+            width: 1230px;
+            height: 600px;
+            position: relative;
+
+            .slide-item {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1000px) {
+    .first-view {
+        .container {
+            flex-direction: column-reverse;
+            width: 100vw;
+            height: calc(100vh - 80px);
+            padding: 0;
+
+            .text-imgcount-area {
+                width: auto;
+                padding: 0 2%;
+
+                .text-column-area {
+                    writing-mode: horizontal-tb;
+                    display: flex;
+
+                    p {
+                        font-size: 1.4rem;
+                        letter-spacing: 0.3rem;
+                        margin-right: 0;
+
+                        &:first-child {
+                            margin-right: 40px;
+                        }
+                    }
+                }
+
+                .count {
+                    position: absolute;
+                    top: 75%;
+                    left: 2%;
+                    z-index: 1;
+                    margin-top: 0;
+
+                    .img-count-area {
+                        color: #fff;
+                    }
+
+                    .shop-name {
+                        z-index: 1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .slide {
+                width: 100%;
+                height: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .first-view {
+        .container {
+            .text-imgcount-area {
+                width: 100%;
+
+                .text-column-area {
+                    flex-wrap: wrap;
+                    width: 100%;
+
+                    p {
+                        width: 100%;
+                        text-align: center;
+
+                        &:first-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

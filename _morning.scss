@@ -1,0 +1,187 @@
+.morning-set {
+    .container {
+        .menu-items {
+
+            .menu-item {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .menu-img {
+                    width: 700px;
+                    height: 470px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+
+                    }
+                }
+
+                .menu-text {
+                    width: 300px;
+                    margin-top: 30px;
+                    padding-left: 20px;
+                    text-align: left;
+
+                    .menu-title {
+                        margin-bottom: 20px;
+
+                        .price {
+                            display: block;
+                            font-size: 1.6rem;
+                            font-weight: bold;
+                            text-align: right;
+                            margin-top: 1rem;
+                        }
+                    }
+
+
+                    .menu-detail {
+                        p {
+                            font-size: 1.4rem;
+                            line-height: 2;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        .menu-lists {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+
+            li {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-right: 30px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: all .7s ease;
+                filter: opacity(1);
+
+                #slick-slide-control00,
+                #slick-slide-control01,
+                #slick-slide-control02,
+                #slick-slide-control03 {
+                    display: none;
+                }
+
+                &:first-child {
+                    background-image: url(../img/menu/menu1.jpg);
+                }
+
+                &:nth-of-type(2) {
+                    background-image: url(../img/menu/menu2.jpg);
+                }
+
+                &:nth-of-type(3) {
+                    background-image: url(../img/menu/menu3.jpg);
+                }
+
+                &:last-child {
+                    background-image: url(../img/menu/menu4.jpg);
+                    margin-right: 0;
+                }
+
+                &.slick-active {
+                    filter: opacity(0.5);
+                }
+            }
+
+        }
+
+
+    }
+}
+
+@media (max-width:1000px) {
+    .morning-set {
+        .container {
+            .menu-items {
+                .menu-item {
+                    flex-direction: column;
+
+                    .menu-img {
+                        width: 100%;
+                        height: 640px;
+                    }
+
+                    .menu-text {
+                        width: 100%;
+                        padding-left: 0;
+                        text-align: center;
+
+                        .menu-title {
+                            display: flex;
+                            align-items: baseline;
+                            justify-content: center;
+                            margin-bottom: 0;
+
+                            .sub-title {
+                                margin-bottom: 10px;
+                            }
+
+                            .price {
+                                margin-top: 0;
+                                margin-left: 2rem;
+                            }
+
+                        }
+
+                        .menu-detail {
+                            p {
+                                line-height: 1.8;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+}
+
+@media(max-width:600px) {
+    .morning-set {
+        .container {
+            .menu-items {
+                .menu-item {
+                    .menu-img {
+                        height: 400px;
+                    }
+                }
+            }
+
+            .menu-lists {
+                li {
+                    width: 80px;
+                    height: 80px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .morning-set {
+        .container {
+            .menu-lists {
+                li {
+                    width: 68px;
+                    height: 68px;
+                }
+            }
+        }
+    }
+}

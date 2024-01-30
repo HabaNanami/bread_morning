@@ -1,0 +1,108 @@
+.motto {
+    position: relative;
+    background-image: url(../img/motto/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .container {
+
+        .text-area {
+            writing-mode: vertical-rl;
+            text-align: left;
+            letter-spacing: 0.5rem;
+            margin-left: 50%;
+
+            .food {
+                margin-top: 1rem;
+                margin-left: 15%;
+            }
+
+            .season {
+                margin-top: 2rem;
+
+                dt {
+                    &::after {
+                        bottom: 27%;
+                    }
+                }
+            }
+
+            dt {
+                font-size: 1.8rem;
+                font-weight: bold;
+                position: relative;
+                margin-left: 30px;
+
+                &::after {
+                    display: block;
+                    content: '';
+                    background-color: #121212;
+                    width: 84px;
+                    height: 1px;
+                    transform: rotate(90deg);
+                    position: absolute;
+                    bottom: 0;
+                    right: -30px;
+                }
+            }
+
+            dd {
+                font-size: 1.4rem;
+                margin-top: 2rem;
+                margin-left: 15px;
+
+                &:last-child {
+                    margin-top: 4rem;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:1000px) {
+    .motto {
+        background-image: url(../img/motto/background-tb.jpg);
+
+        .container {
+
+            .text-area {
+                margin-left: 45%;
+            }
+
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .motto {
+        background-image: url(../img/motto/background-tb2.jpg);
+        background-size: cover;
+
+        .container {
+            .text-area {
+                margin: 0 auto;
+
+                .food {
+                    margin-left: 10%;
+                }
+
+                dt {
+                    margin-left: 20px;
+                }
+
+                dd {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .motto {
+        background-image: url(../img/motto/background-sp.jpg);
+    }
+}

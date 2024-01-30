@@ -1,0 +1,130 @@
+.drink {
+    background-image: url(../img/drink/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: #fff;
+    padding: 50px 0;
+
+    .section-title {
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+
+        &::after {
+            background-color: #fff;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+
+        .hot {
+            width: 45%;
+            margin-right: 10%;
+        }
+
+        .ice {
+            width: 45%;
+        }
+
+        .sub-title {
+            text-align: center;
+            text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 31px;
+
+            dt {
+                width: 70%;
+                font-size: 1.6rem;
+                font-weight: bold;
+                text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+                padding: 16px 0;
+                padding-left: 0.5rem;
+                border-top: 1.5px solid #fff;
+
+                &:last-of-type {
+                    border-bottom: 1.5px solid #fff;
+                }
+
+                span {
+                    font-size: 1.4rem;
+                    margin-left: 2rem;
+                }
+            }
+
+            dd {
+                width: 30%;
+                font-size: 1.6rem;
+                font-weight: bold;
+                text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+                padding: 16px 0;
+                padding-right: 0.5rem;
+                border-top: 1.5px solid #fff;
+                text-align: right;
+
+                &:last-of-type {
+                    border-bottom: 1.5px solid #fff;
+                }
+            }
+        }
+
+    }
+}
+
+@media(max-width:850px) {
+    .drink {
+        .container {
+            flex-direction: column;
+            margin-top: 80px;
+
+            .hot,
+            .ice {
+                width: 70%;
+                margin: 0 auto;
+
+                .menu {
+                    margin-top: 20px;
+                }
+            }
+
+            .ice {
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .drink {
+        .container {
+
+            .hot,
+            .ice {
+                width: 80%;
+
+                .menu {
+
+                    dt {
+                        font-size: 1.4rem;
+                    }
+
+                    dd {
+                        font-size: 1.4rem;
+                        padding-top: 18.5px;
+
+                        span {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

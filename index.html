@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>パン屋さんのモーニング</title>
+    <meta name="description" content="パン屋さんが作るモーニング！野菜とパンの美味しさをたっぷり味わえる自慢のモーニングプレートがおすすめです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/logo/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css"
+        integrity="sha512-fSKum0u74TzF+eAXxBS0oIp3LlON1gd++1rifA0ZnQWKP2JXbCdomS2k0BDEM7v0se7mQOpOwedRw/lRsSPAaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+</head>
+
+<body>
+    <div class="splash">
+        <div class="splash-text" id="splash_ber"></div>
+    </div>
+    <div class="splashbg"></div>
+
+    <header>
+        <h1 class="site-logo">
+            <a href="#">
+                <img src="img/logo/logo.png" alt="お店のロゴです">
+            </a>
+        </h1>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="header-nav">
+            <div class="site-link">
+                <ul>
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="#morning-set">MORNING SET</a></li>
+                    <li><a href="#dlink-bread">DRINK & BREAD</a></li>
+                    <li><a href="#motto">MOTTO</a></li>
+                    <li><a href="#shop-info">SHOP INFO</a></li>
+                </ul>
+            </div>
+            <div class="sns-link">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <img src="img/icon/instagram-icon.png" alt="instagramのリンクです">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <img src="img/icon/facebook-icon.png" alt="facebookのリンクです">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mask"></div>
+    </header>
+
+    <main>
+        <section class="first-view">
+            <div class="container">
+                <div class="text-imgcount-area">
+                    <div class="text-column-area">
+                        <p>焼きたてパンが食べ放題</p>
+                        <p>野菜たっぷりのモーニング</p>
+                    </div>
+                    <div class="count">
+                        <div class="img-count-area">
+                            <span class="large">0<span class="green">1
+                                </span>
+                            </span>
+                            / 03
+                        </div>
+                        <div class="shop-name">BREAD & MORNING</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-item"></div>
+                </div>
+            </div>
+        </section>
+        <section class="morning-set" id="morning-set">
+            <h2 class="section-title">MORNING SET</h2>
+            <div class="sub-text-area">
+                <p class="text">OPEN 〜 10:30 までのモーニングセット</p>
+                <p class="text">ー種類からお選びいただけます</p>
+            </div>
+            <div class="container">
+                <div class="menu-items">
+                    <div class="menu-item" id="salad">
+                        <div class="menu-img">
+                            <img src="img/menu/menu1.jpg" alt="サラダの写真です">
+                        </div>
+                        <div class="menu-text">
+                            <div class="menu-title">
+                                <h3 class="sub-title">サラダボウルセット</h3><span class="price">¥750</span>
+                            </div>
+                            <div class="menu-detail">
+                                <p>新鮮な野菜をお楽しみください！</p>
+                                <p>こちらのモーニングセットもパンの食べ放題がついております。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="acai">
+                        <div class="menu-img">
+                            <img src="img/menu/menu2.jpg" alt="アサイーボールの写真です">
+                        </div>
+                        <div class="menu-text">
+                            <div class="menu-title">
+                                <h3 class="sub-title">アサイーボールセット</h3><span class="price">¥800</span>
+                            </div>
+                            <div class="menu-detail">
+                                <p>アサイーと季節のフルーツがたっぷり！</p>
+                                <p>こちらのモーニングセットもパンの食べ放題がついております。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="sandwich">
+                        <div class="menu-img">
+                            <img src="img/menu/menu3.jpg" alt="サンドイッチの写真です">
+                        </div>
+                        <div class="menu-text">
+                            <div class="menu-title">
+                                <h3 class="sub-title">サンドイッチセット</h3><span class="price">¥750</span>
+                            </div>
+                            <div class="menu-detail">
+                                <p>店主の気まぐれサンドイッチ</p>
+                                <p>中の具材は日替わりなので何回でも楽しめます！</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" id="soup">
+                        <div class="menu-img">
+                            <img src="img/menu/menu4.jpg" alt="スープの写真です">
+                        </div>
+                        <div class="menu-text">
+                            <div class="menu-title">
+                                <h3 class="sub-title">日替わりスープセット</h3><span class="price">¥600</span>
+                            </div>
+                            <div class="menu-detail">
+                                <p>温かいスープでほっと一息しませんか？</p>
+                                <p>こちらのモーニングセットもパンの食べ放題がついております。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="drink" id="dlink-bread">
+            <h2 class="section-title">DRINK</h2>
+            <div class="container">
+                <div class="hot">
+                    <h3 class="sub-title">HOT</h3>
+                    <dl class="menu">
+                        <dt>ブレンド</dt>
+                        <dd>¥480</dd>
+                        <dt>アイスオレ</dt>
+                        <dd>¥500</dd>
+                        <dt>ホットミルク</dt>
+                        <dd>¥480</dd>
+                        <dt>紅茶<span>ストレート/ミルク</span></dt>
+                        <dd>¥480</dd>
+                        <dt>本日のおすすめ</dt>
+                        <dd>¥520</dd>
+                    </dl>
+                </div>
+                <div class="ice">
+                    <h3 class="sub-title">ICE</h3>
+                    <dl class="menu">
+                        <dt>アイスコーヒー</dt>
+                        <dd>¥450</dd>
+                        <dt>カフェオレ</dt>
+                        <dd>¥500</dd>
+                        <dt>紅茶<span>ストレート/レモン</span></dt>
+                        <dd>¥480</dd>
+                        <dt>バナナスムージー</dt>
+                        <dd>¥550</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="bread">
+            <h2 class="section-title">BREAD</h2>
+            <div class="sub-text-area">
+                <p class="text">1日の始まりに美味しいパンは</p>
+                <p class="text">いかがですか？</p>
+            </div>
+            <div class="container">
+                <ul class="bread-menu">
+                    <li class="item">
+                        <div class="img">
+                            <img src="img/bread/bread1.jpg" alt="クロワッサン">
+                        </div>
+                        <p class="name">クロワッサン</p>
+                        <p class="price">¥300</p>
+                    </li>
+                    <li class="item">
+                        <div class="img">
+                            <img src="img/bread/bread2.jpg" alt="ミニ食パン">
+                        </div>
+                        <p class="name">ミニ食パン</p>
+                        <p class="price">¥300</p>
+                    </li>
+                    <li class="item">
+                        <div class="img">
+                            <img src="img/bread/bread3.jpg" alt="ミルクパン">
+                        </div>
+                        <p class="name">ミルクパン</p>
+                        <p class="price">¥300</p>
+                    </li>
+                    <li class="item">
+                        <div class="img">
+                            <img src="img/bread/bread4.jpg" alt="キッシュ">
+                        </div>
+                        <p class="name">キッシュ</p>
+                        <p class="price">¥480</p>
+                    </li>
+                    <li class="item">
+                        <div class="img">
+                            <img src="img/bread/bread5.jpg" alt="セサミベーグル">
+                        </div>
+                        <p class="name">セサミベーグル</p>
+                        <p class="price">¥380</p>
+                    </li>
+                </ul>
+                <div class="view-more">
+                    <a href="bread.html">VIEW MORE</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="motto" id="motto">
+            <h2 class="section-title">MOTTO</h2>
+            <div class="sub-text-area">
+                <p class="text">心と体を満たすお食事を提供します</p>
+            </div>
+            <div class="container">
+                <dl class="text-area">
+                    <div class="food">
+                        <dt>安心して食事を楽しんでいただくために</dt>
+                        <dd>農家さんから直接仕入れた新鮮な食材を</dd>
+                        <dd>お店で丁寧に調理し、お客さまに提供しています。</dd>
+                    </div>
+                    <div class="season">
+                        <dt>季節の移り変わりを楽しむ</dt>
+                        <dd>１ヶ月ごとに季節限定メニューをご用意しております</dd>
+                        <dd>食事から季節を感じてみませんか？</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="shop-info" id="shop-info">
+            <div class="container">
+                <h2 class="section-title">SHOP INFO</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7484171421083!2d139.745484!3d35.6585696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd90841d73%3A0xaa98574dc1548bf!2z44CSMTA1LTAwMTEg5p2x5Lqs6YO95riv5Yy66Iqd5YWs5ZyS77yU5LiB55uu77yS4oiS77yYIOadseS6rOOCv-ODr-ODvA!5e0!3m2!1sja!2sjp!4v1703909852937!5m2!1sja!2sjp"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="info-txt">
+                    <dl class="hours">
+                        <dt>OPEN：</dt>
+                        <dd>8:30</dd>
+                        <dt>CLOSE：</dt>
+                        <dd>16:30</dd>
+                    </dl>
+                    <p class="add">〒105-0011 東京都港区芝公園４丁目２−８</p>
+                    <div class="others-info">
+                        <dl>
+                            <dt>TEL：</dt>
+                            <dd>000-1234-9999</dd>
+                            <dt>CONTACT：</dt>
+                            <dd>123xxx@xxx.com</dd>
+                            <dt>PAYMENT：</dt>
+                            <dd>現金・キャッシュレス対応</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span class="border"></span>
+        <div class="footer-logo">
+            <img src="img/logo/logo.png" alt="ロゴです">
+        </div>
+        <div class="sns-link">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <img src="img/icon/instagram-icon.png" alt="instagramのリンクです">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <img src="img/icon/facebook-icon.png" alt="facebookのリンクです">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copy-right"><small>&copy;&nbsp;BREAD&MORNING&nbsp;2023</small></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js"
+        integrity="sha512-lYAcY5E6LZVeNB3Pky37SxbYKzo8A68MzKFoPg5oTuolhRm36D+YRvkrAQS4JuKsaGYeJ5KA5taMEtpNlPUeOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.js"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/vega.js"></script>
+    <script src="js/progressber.js"></script>
+</body>
+
+</html>

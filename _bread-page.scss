@@ -1,0 +1,215 @@
+.bread-page {
+
+    .bread-bg {
+        width: 100%;
+        height: 200px;
+        padding-top: 120px;
+        background-image: url(../img/bread/bread-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        font-size: 3.4rem;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .rec-bread {
+        .rec-bread-items {
+
+            .item {
+                display: flex;
+                margin-bottom: 100px;
+
+                .img {
+                    width: 70%;
+                    height: 500px;
+
+                    img {
+                        width: 100%;
+                        height: 500px;
+                        object-fit: cover;
+                    }
+                }
+
+                .item-text {
+                    width: 30%;
+                    padding: 0 0.5%;
+                    margin-top: 10px;
+
+                    .price {
+                        margin-top: 1rem;
+                        font-size: 2.0rem;
+                        font-weight: bold;
+                        text-align: right;
+                    }
+
+                    .item-text {
+                        width: 98%;
+                        margin-top: 20px;
+                        margin-left: 2%;
+                        font-size: 1.8rem;
+                        line-height: 1.6;
+                    }
+                }
+
+                &:last-child {
+                    flex-direction: row-reverse;
+
+                    .price {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .bg1 {
+        width: 250px;
+        position: relative;
+        top: -129px;
+        transform: rotate(45deg);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .bg2 {
+        width: 200px;
+        position: relative;
+        top: -150px;
+        left: 10%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .others {
+        margin-top: -200px;
+
+        .others-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 300px;
+                margin: 5px;
+                margin-bottom: 20px;
+
+                .img {
+                    width: 100%;
+                    height: 300px;
+                    margin-bottom: 20px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .price {
+                    font-size: 2rem;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1000px) {
+    .bread-page {
+        .bread-bg {
+            padding-top: 110px;
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .bread-page {
+        .bg2 {
+            top: -220px;
+            left: 20%;
+        }
+    }
+}
+
+@media(max-width:750px) {
+    .bread-page {
+        .rec-bread {
+            .rec-bread-items {
+                .item {
+                    flex-direction: column;
+                    margin-bottom: 80px;
+
+                    .img {
+                        width: 100%;
+                    }
+
+                    .item-text {
+                        width: 100%;
+
+                        .sub-title,
+                        .price {
+                            text-align: center;
+                        }
+                    }
+
+                    &:last-child {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+
+        .bg1 {
+            width: 180px;
+            top: -10px;
+        }
+
+        .bg2 {
+            width: 180px;
+            top: -110px;
+        }
+
+        .others {
+            margin-top: -100px;
+        }
+    }
+}
+
+@media(max-width:680px) {
+    .bread-page {
+        .others {
+            .others-items {
+                .item {
+                    width: 100%;
+                    margin-bottom: 50px;
+
+                    .img {
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .bread-page {
+        .others {
+            margin-top: 0px;
+        }
+
+        .bg2 {
+            display: none;
+        }
+    }
+}
