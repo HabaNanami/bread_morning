@@ -5,6 +5,7 @@
     background-position: top;
     padding-top: 100px;
     padding-bottom: 50px;
+    height: 800px;
 
     .container {
 
@@ -33,6 +34,7 @@
                 font-size: 1.8rem;
                 font-weight: bold;
                 position: relative;
+                margin-left: 20px;
 
                 &::after {
                     display: block;

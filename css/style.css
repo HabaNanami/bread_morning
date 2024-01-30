@@ -821,6 +821,7 @@ header.open .mask {
   background-position: top;
   padding-top: 100px;
   padding-bottom: 50px;
+  height: 800px;
 }
 .motto .container .text-area {
   writing-mode: vertical-rl;
@@ -842,6 +843,7 @@ header.open .mask {
   font-size: 1.8rem;
   font-weight: bold;
   position: relative;
+  margin-left: 20px;
 }
 .motto .container .text-area dt::after {
   display: block;
