@@ -842,7 +842,6 @@ header.open .mask {
   font-size: 1.8rem;
   font-weight: bold;
   position: relative;
-  margin-left: 30px;
 }
 .motto .container .text-area dt::after {
   display: block;
@@ -854,6 +853,7 @@ header.open .mask {
   position: absolute;
   bottom: 0;
   right: -30px;
+  margin-left: 30px;
 }
 .motto .container .text-area dd {
   font-size: 1.4rem;
@@ -886,8 +886,14 @@ header.open .mask {
   .motto .container .text-area dt {
     margin-left: 20px;
   }
+  .motto .container .text-area dt::after {
+    bottom: -100px;
+  }
   .motto .container .text-area dd {
     margin-left: 10px;
+  }
+  .motto .container .text-area .season dt::after {
+    bottom: calc(27% - 100px);
   }
 }
 @media (max-width: 500px) {
