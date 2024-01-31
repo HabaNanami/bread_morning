@@ -35,7 +35,7 @@ $(function () {
             $('.green').text(count);
         };
 
-    }, 10000);
+    }, 11000);
 });
 
 const header = document.querySelector('header');
