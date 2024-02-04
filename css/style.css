@@ -457,7 +457,7 @@ header.open .mask {
   }
   .first-view .container .text-imgcount-area .count {
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 2%;
     z-index: 1;
     margin-top: 0;
